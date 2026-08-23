@@ -8,7 +8,7 @@ R
 int main(){
 //declaração das variaveis, não inicializei dessa vez porque logo usaremos elas 
 int r;
-int notas100, notas50, notas10, notas10, notas5, moedas1;
+int notas100, notas50, notas10, notas5, moedas1;
 
 printf("Digite um valor inteiro ");
 
