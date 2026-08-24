@@ -1,0 +1,11 @@
+# Executáveis gerados pelo GCC
+contagem_de_notas
+contagem_de_tempo
+
+# Arquivos objeto
+*.o
+
+# Outros executáveis
+*.out
+*.exe
+
