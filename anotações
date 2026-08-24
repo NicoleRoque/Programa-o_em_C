@@ -1,0 +1,11 @@
+como compilar 
+exemplo classe com o nome exercicio1.c
+
+gcc exercicio1.c -o bin/exercicio1
+./bin/exercicio1
+
+e depois 
+
+git add .gitignore
+git commit -m "Organiza arquivos de compilacao"
+git push
