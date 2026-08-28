@@ -10,7 +10,7 @@ int main() {
                 {8, 9, 10, 11},
                 {12, 13, 14, 15}
             };
-            exibeMemoria(v, 5 * sizeof(20)); //exibe o vetor e todos os seus bytes
+            exibeMemoria((char *)v, 5 * sizeof(20)); //exibe o vetor e todos os seus bytes
             printf("\n");
             exibeMemoria(matriz, 4 *4 * sizeof(int)); //exibe a matriz e todos os seus bytes
         }
