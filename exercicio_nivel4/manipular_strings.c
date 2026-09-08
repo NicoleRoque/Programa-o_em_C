@@ -27,22 +27,27 @@ int main(){
 }
 
 char* minha_strstr(char* string, char* substring){
-    int pos1;
-    int pos2;
-    pos1 = 0;
-    while(string[pos1] != '\0'){
-        pos2 = 0; 
-        while(substring[pos2] != '0'){
-            if (string[pos1+pos2] == string[pos2])
+    char *ptr1;
+    char *ptr2;
+    ptr1 = string; //aponta para o inicio da string
+    while(*ptr1 != '\0'){
+         
+        ptr2 = substring; //aponta para o inicio da substring
+        int* aux = ptr1;
+        while(*ptr2 != '0' && *aux != '\0'){
+            printf("%c <-> %c\n " , *aux , *ptr2);
+            if (*aux == *ptr2)
             {
-                pos2++;
+                printf("Achei! \n");
+                ptr2++;
+                aux++;
             }
             
         }
-        if(substring[pos2] == '\0'){ //cheguei no final
-            return &string[pos1];
+        if(*ptr2 == '\0'){ //cheguei no final
+            return ptr1;
         }
-        pos1++;
+        ptr1++;
     }
     return NULL;
     
